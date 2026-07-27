@@ -31,6 +31,27 @@ planets.forEach(planet => {
       <h2>${planet.name} - ${planet.urdu}</h2>
       <p><b>Gravity:</b> ${planet.gravity} m/s²</p>
       <p><b>${userWeight}kg ka wazan:</b> ${weightOnPlanet} kg</p>
+      // Button aur popup pakro
+const btn = document.getElementById("showPlanetsBtn");
+const popup = document.getElementById("planetsPopup");
+const closeBtn = document.querySelector(".closeBtn");
+
+// Button dabao = popup khule
+btn.onclick = function() {
+  popup.style.display = "block";
+}
+
+// X dabao = popup band
+closeBtn.onclick = function() {
+  popup.style.display = "none";
+}
+
+// Bahar click karo = popup band
+window.onclick = function(event) {
+  if (event.target == popup) {
+    popup.style.display = "none";
+  }
+        }
     </div>
   `;
   container.innerHTML += card;
