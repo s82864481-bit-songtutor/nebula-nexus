@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEBULA NEXUS</title> <!-- Title change -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="stars"></div>
+
+<h1>🌌 NEBULA NEXUS 🌌</h1> <!-- Yahan naam change kiya -->
+
+<p style="color:#00ffff; margin-bottom:15px;">Explore Solar System, Exoplanets & Messier</p>
+
+<button onclick="showTab('solar')">Solar System</button>
+<button onclick="showTab('exo')">Exoplanets</button>
+<button onclick="showTab('messier')">Messier</button>
+<button onclick="showTab('facts')">Space Facts</button>
+
+<div id="solar">
+  <div class="sun"></div>
+  <div class="orbit-container" style="width:160px; height:160px; animation-duration: 3s;">
+    <div class="orbit" style="width:160px; height:160px;"></div>
+    <div class="planet mercury" onclick="showInfo('Mercury', 'Sabse chota, 88 din me 1 chakkar')"></div>
+  </div>
+  <div class="orbit-container" style="width:280px; height:280px; animation-duration: 8s;">
+    <div class="orbit" style="width:280px; height:280px;"></div>
+    <div class="planet earth" onclick="showInfo('Earth', 'Sirf yahan zindagi hai 💙')"></div>
+  </div>
+  <div class="orbit-container" style="width:420px; height:420px; animation-duration: 25s;">
+    <div class="orbit" style="width:420px; height:420px;"></div>
+    <div class="planet saturn" onclick="showInfo('Saturn', 'Rings wala khubsurat planet')"></div>
+  </div>
+</div>
+
+<div id="exo" style="display:none;" class="list">
+  <h2>🌌 Exoplanets</h2>
+  <p onclick="showInfo('Proxima Centauri b', '4.24 light years door')"><b>Proxima b</b></p>
+  <p onclick="showInfo('TRAPPIST-1e', 'Yahan ocean ho sakta hai')"><b>TRAPPIST-1e</b></p>
+</div>
+
+<div id="messier" style="display:none;" class="list">
+  <h2>🔭 Messier Objects</h2>
+  <p onclick="showInfo('M31 Andromeda', '2.5 million light years door')"><b>M31</b> Andromeda Galaxy</p>
+  <p onclick="showInfo('M42 Orion Nebula', 'Stars yahin paida hote hain')"><b>M42</b> Orion Nebula</p>
+</div>
+
+<div id="facts" style="display:none;" class="list">
+  <h2>👩‍🚀 Did You Know?</h2>
+  <p onclick="showInfo('Fact 1', 'Space me awaz nahi hoti')"><b>Space silent hai</b></p>
+  <p onclick="showInfo('Fact 2', '1 din Venus pe = 243 din Earth')"><b>Venus ulta ghumta hai</b></p>
+</div>
+
+<div id="info">
+  <b>🔍 Selected:</b> <span id="pname">Click karo</span><br>
+  <b>📡 Data:</b> <span id="pinfo">Info yahan aayegi</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+    </html>
