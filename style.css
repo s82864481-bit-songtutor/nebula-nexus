@@ -171,4 +171,43 @@ button:hover {
   color: #00d4ff;
   margin: 10px 0;
   }
-                         }
+       
+}
+#showPlanetsBtn {
+  background: #00d4ff;
+  color: black;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.popup {
+  display: none; /* shuru me chupa hua */
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  z-index: 999;
+  overflow-y: auto; /* scroll ho sake */
+}
+
+.popup-content {
+  background: #1a1a2e;
+  margin: 5% auto;
+  padding: 20px;
+  border: 2px solid #00d4ff;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 800px;
+  color: white;
+}
+
+.closeBtn {
+  float: right;
+  font-size: 30px;
+  cursor: pointer;
+  color: #ff00ff;
+  }
